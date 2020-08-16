@@ -64,33 +64,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="R2u-FE-2pY">
-                                <rect key="frame" x="103.5" y="321.5" width="207" height="307"/>
+                                <rect key="frame" x="41.5" y="233" width="331" height="484"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byD-0X-HgX">
-                                        <rect key="frame" x="0.0" y="0.0" width="207" height="33.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byD-0X-HgX">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="33.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeQ-ue-Cfu">
-                                        <rect key="frame" x="0.0" y="53.5" width="207" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="53.5" width="331" height="26.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="s61-Wf-hJd">
-                                        <rect key="frame" x="0.0" y="100.5" width="207" height="206"/>
+                                        <rect key="frame" x="0.0" y="100.5" width="331" height="330"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="s61-Wf-hJd" secondAttribute="height" multiplier="1:1" id="iQ2-AL-4Kb"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-uQ-JBS">
+                                        <rect key="frame" x="0.0" y="451" width="331" height="33"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <state key="normal" title="Update image..."/>
+                                        <connections>
+                                            <action selector="updateImage" destination="DYB-cX-iZT" eventType="touchUpInside" id="j8x-5e-IdH"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="R2u-FE-2pY" firstAttribute="centerX" secondItem="ENY-3X-blc" secondAttribute="centerX" id="2b2-6F-rM5"/>
-                            <constraint firstItem="R2u-FE-2pY" firstAttribute="width" secondItem="IyD-n5-8fq" secondAttribute="width" multiplier="0.5" id="NQa-Sa-Rwg"/>
+                            <constraint firstItem="R2u-FE-2pY" firstAttribute="width" secondItem="IyD-n5-8fq" secondAttribute="width" multiplier="0.8" id="NQa-Sa-Rwg"/>
                             <constraint firstItem="R2u-FE-2pY" firstAttribute="centerY" secondItem="ENY-3X-blc" secondAttribute="centerY" id="dwV-hg-5Ea"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ENY-3X-blc"/>

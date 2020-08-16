@@ -10,6 +10,11 @@ import UIKit
 
 class LibraryViewController: UITableViewController {
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     @IBSegueAction func showDetailView(_ coder: NSCoder) -> DetailViewController? {
         guard let indexPath = tableView.indexPathForSelectedRow else { fatalError("Nothing Selected!") }
         let book = Library.books[indexPath.row]
